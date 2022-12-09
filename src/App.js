@@ -1,9 +1,13 @@
+import { User } from './components/User';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p className=" text-pale-blue text-5xl font-rubik">Header</p>
-      </header>
+      <main className=" w-full h-screen bg-vd-blue font-rubik text-white">
+        <div className="grid">
+          <User />
+        </div>
+      </main>
     </div>
   );
 }
