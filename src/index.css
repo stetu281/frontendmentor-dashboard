@@ -3,7 +3,7 @@
 
 @layer components {
   .btn {
-    @apply border-0 bg-transparent text-lg text-pale-blue hover:text-white;
+    @apply border-0 bg-transparent text-lg text-pale-blue hover:text-white lg:py-2;
   }
 }
 
