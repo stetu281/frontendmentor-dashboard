@@ -5,6 +5,10 @@
   .btn {
     @apply border-0 bg-transparent text-lg text-pale-blue hover:text-white lg:py-2;
   }
+
+  .active {
+    @apply text-white;
+  }
 }
 
 @tailwind utilities;

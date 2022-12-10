@@ -12,7 +12,7 @@ export const User = () => {
         </h1>        
       </div>
       <div className=' p-6 flex justify-between lg:flex-col lg:items-start lg:p-8'>
-        <button className='btn'>Daily</button>
+        <button className='btn active'>Daily</button>
         <button className='btn'>Weekly</button>
         <button className='btn'>Monthly</button>
       </div>
