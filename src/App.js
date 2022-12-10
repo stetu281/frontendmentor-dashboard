@@ -3,8 +3,8 @@ import { ActivityCard } from './components/ActivityCard';
 import data from './assets/data/data.json';
 
 function App() {
-  const handleClick = () => {
-    console.log('click');
+  const handleClick = (e) => {
+    console.log(e.target.id);
   };
 
   return (

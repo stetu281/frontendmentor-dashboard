@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import profileImg from '../assets/images/image-jeremy.png';
 
 export const User = (props) => {
+  const timeFrames = ['daily', 'weekly', 'monthly'];
+
+  const [active, setActive] = useState(0);
+
+  const handleChange = (index) => {
+    setActive(index);
+  };
+
   return (
     <div className=" bg-dark-blue rounded-xl lg:row-span-2">
       <div className="bg-primary p-6 rounded-xl flex items-center lg:flex-col lg:items-start lg:p-8 lg:pb-14">
@@ -12,16 +21,20 @@ export const User = (props) => {
         </h1>
       </div>
       <div className=" p-6 flex justify-between lg:flex-col lg:items-start lg:p-8">
-        <button
-          onClick={(e) => {
-            props.handleClick(console.log(e));
-          }}
-          className="btn active"
-        >
-          Daily
-        </button>
-        <button className="btn">Weekly</button>
-        <button className="btn">Monthly</button>
+        {timeFrames.map((item, index) => {
+          return (
+            <button
+              id={item}
+              className={index === active ? 'btn active' : 'btn'}
+              onClick={(e) => {
+                handleChange(index);
+                props.handleClick(e);
+              }}
+            >
+              {item}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
