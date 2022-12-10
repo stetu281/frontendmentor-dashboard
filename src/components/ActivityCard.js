@@ -4,7 +4,7 @@ export const ActivityCard = ({ activity, title, id }) => {
       <div className=" bg-dark-blue p-6 rounded-xl lg:p-8 hover:bg-hov-blue hover:cursor-pointer">
         <div className="flex justify-between items-center">
           <h2 className="text-lg font-medium">{title}</h2>
-          <button className="group py-1" aria-aria-label="Options">
+          <button className="group py-1" aria-label="Options">
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
               <path
                 className=" group-hover:fill-white"
