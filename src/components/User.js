@@ -25,6 +25,7 @@ export const User = (props) => {
           return (
             <button
               id={item}
+              key={index}
               className={index === active ? 'btn active' : 'btn'}
               onClick={(e) => {
                 handleChange(index);
